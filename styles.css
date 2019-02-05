@@ -42,8 +42,13 @@
 	text-align: center;
 }
 
+@font-face {
+	font-family: 'segoe ui light';
+	src: URL('assets/segoeuil.ttf') format('truetype');
+}
+
 body {
-	font-family: "segoe ui light";
+	font-family: 'segoe ui light';
 	
 }
 

@@ -67,7 +67,7 @@ var fx = {
 		
 		stroke(fadeShade);
 		
-		var speed = 30;
+		var speed = 50;
 		var start = (frameCount*.5)%speed;
 		
 		var length = window.innerWidth+window.innerHeight;
@@ -100,8 +100,8 @@ function setup() {
 	
 	createCanvas(window.innerWidth, window.innerHeight);
 	
-	for(var i=0;i<100;i++) {
-		boxes.push(new Box(i/100.));
+	for(var i=0;i<50;i++) {
+		boxes.push(new Box(i/50.));
 	}
 	
 	boxScale = 400;
