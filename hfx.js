@@ -18,7 +18,7 @@ class Box {
 		this.z = 200*(1-time);
 		this.x = random(-1,1)*.05*window.innerWidth;
 		this.y = random(-1,1)*.05*window.innerHeight;
-		this.size = 10;
+		this.size = 7;
 	}
 	
 	move() {
