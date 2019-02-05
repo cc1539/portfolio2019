@@ -1,5 +1,6 @@
 
 var isMobile;
+var canvasScale;
 
 var boxScale;
 var boxes = [];
@@ -102,11 +103,12 @@ function setup() {
 	
 	isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 	if(isMobile) {
-		noLoop();
-		return; // for now, if we're on mobile, just don't do anything.
+		canvasScale = .1;
+	} else {
+		canvasScale = 1;
 	}
 	
-	createCanvas(window.innerWidth, window.innerHeight);
+	createCanvas(window.innerWidth*canvasScale, window.innerHeight*canvasScale);
 	
 	for(var i=0;i<50;i++) {
 		boxes.push(new Box(1-i/50.));
@@ -156,5 +158,5 @@ function draw() {
 }
 
 function windowResized() {
-	createCanvas(window.innerWidth, window.innerHeight);
+	createCanvas(window.innerWidth*canvasScale, window.innerHeight*canvasScale);
 }
