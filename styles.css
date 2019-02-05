@@ -13,14 +13,14 @@
 
 #header {
 	text-shadow:
-		2px 2px 1px black,
-		0 2px 1px black,
-		-2px 2px 1px black,
-		-2px 0 1px black,
-		-2px -2px 1px black,
-		0 -2px 1px black,
-		2px -2px 1px black,
-		2px 0 1px black;
+		2px 2px 1px grey,
+		0 2px 1px grey,
+		-2px 2px 1px grey,
+		-2px 0 1px grey,
+		-2px -2px 1px grey,
+		0 -2px 1px grey,
+		2px -2px 1px grey,
+		2px 0 1px grey;
 	color: white;
 	position: absolute;
 	left: 0;
@@ -60,4 +60,20 @@ canvas {
 	left: 0;
 	width: 100vw;
 	height: 100vh;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	font-weight: bold;
+}
+
+.collapsible {
+	user-select: none;
+}
+
+.collapsible+* {
+	display: none;
 }

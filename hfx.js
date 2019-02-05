@@ -87,7 +87,12 @@ var fx = {
 		for(var i=0;i<boxes.length;i++) { boxes[i].draw(); }
 	},
 	'fractal':function() {
-		
+		for(var i=0;i<50;i++) {
+			fill(fadeShade);
+			textSize(24);
+			textAlign(CENTER,CENTER);
+			text("fractal",random(0,window.innerWidth),random(0,window.innerHeight));
+		}
 	},
 	'epilepsy':function() {
 		background(random(0,255));
