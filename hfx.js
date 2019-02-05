@@ -101,7 +101,7 @@ function setup() {
 	createCanvas(window.innerWidth, window.innerHeight);
 	
 	for(var i=0;i<50;i++) {
-		boxes.push(new Box(i/50.));
+		boxes.push(new Box(1-i/50.));
 	}
 	
 	boxScale = 400;
