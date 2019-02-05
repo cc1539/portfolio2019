@@ -1,4 +1,6 @@
 
+var isMobile;
+
 var boxScale;
 var boxes = [];
 
@@ -98,6 +100,11 @@ var fxfade = 0;
 
 function setup() {
 	
+	isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+	if(isMobile) {
+		alert("u r on mobile?");
+	}
+	
 	createCanvas(window.innerWidth, window.innerHeight);
 	
 	for(var i=0;i<50;i++) {
@@ -110,11 +117,13 @@ function setup() {
 	fxindex = 0;
 	fxtimer = 0;
 	fxfade = 0;
+	
 }
 
 function draw() {
 	
-	background(255);
+	clear();
+	//background(255);
 	
 	if(fxfade>0) {
 		
