@@ -102,7 +102,8 @@ function setup() {
 	
 	isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 	if(isMobile) {
-		alert("u r on mobile?");
+		noLoop();
+		return; // for now, if we're on mobile, just don't do anything.
 	}
 	
 	createCanvas(window.innerWidth, window.innerHeight);
