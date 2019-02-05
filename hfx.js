@@ -103,7 +103,7 @@ function setup() {
 	
 	isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 	if(isMobile) {
-		canvasScale = .1;
+		canvasScale = 1;
 	} else {
 		canvasScale = 1;
 	}
