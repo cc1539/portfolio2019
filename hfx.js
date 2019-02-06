@@ -7,6 +7,9 @@ var boxes = [];
 
 var fadeShade = 0;
 
+var mouseX_lag;
+var mouseY_lag;
+
 function lineBetweenVertices(a,b) {
 	line(a.x,a.y,b.x,b.y);
 }
@@ -44,8 +47,10 @@ class Box {
 			};
 			vert.x /= vert.z/boxScale;
 			vert.y /= vert.z/boxScale;
-			vert.x += window.innerWidth/2;
-			vert.y += window.innerHeight/2;
+			//vert.x += window.innerWidth/2;
+			//vert.y += window.innerHeight/2;
+			vert.x += mouseX_lag;
+			vert.y += mouseY_lag;
 			verts[i][j][k] = vert;
 		}
 		}
@@ -65,6 +70,25 @@ class Box {
 	
 }
 
+function drawBranch(x,y,a,length,a0,a1,shrink,d0,d1,s) {
+	
+	var x1 = x+length*cos(a);
+	var y1 = y+length*sin(a);
+	
+	strokeWeight(length*0.1);
+	stroke(fadeShade+(255-fadeShade)*(1-s));
+	line(x,y,x1,y1);
+	
+	length *= shrink;
+	s += .15;
+	
+	if(s<1) {
+		drawBranch(x1,y1,a-a0,length,a0-d0,a1+d1,shrink,d0,d1,s);
+		drawBranch(x1,y1,a+a1,length,a0-d0,a1+d1,shrink,d0,d1,s);
+	}
+	
+}
+
 var fx = {
 	'lines':function() {
 		
@@ -76,7 +100,7 @@ var fx = {
 		var length = window.innerWidth+window.innerHeight;
 		
 		for(var i=start;i<length;i+=speed) {
-			strokeWeight((sin((i+frameCount*3)/100.)*.5+.5)*3+1);
+			strokeWeight((sin((i+frameCount*3+mouseX_lag+mouseY_lag)/100.)*.5+.5)*3+1);
 			line(i,0,0,i);
 		}
 		
@@ -87,11 +111,19 @@ var fx = {
 		for(var i=0;i<boxes.length;i++) { boxes[i].draw(); }
 	},
 	'fractal':function() {
-		for(var i=0;i<50;i++) {
-			fill(fadeShade);
-			textSize(24);
-			textAlign(CENTER,CENTER);
-			text("fractal",random(0,window.innerWidth),random(0,window.innerHeight));
+		stroke(fadeShade);
+		var split_angle = frameCount/210.;
+		var drift0 = (mouseX_lag-window.innerWidth/2)/1000.;
+		var drift1 = (mouseY_lag-window.innerHeight/2)/1000.;
+		var length = max(window.innerWidth,window.innerHeight)/9;
+		for(var i=0;i<3;i++) {
+			var angle = i/3*TWO_PI+frameCount/130.;
+			drawBranch(
+					window.innerWidth/2,
+					window.innerHeight/2,
+					angle,length,
+					split_angle,split_angle,0.9,
+					drift0,drift1,0);
 		}
 	},
 	'epilepsy':function() {
@@ -108,7 +140,7 @@ function setup() {
 	
 	isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 	if(isMobile) {
-		canvasScale = 1;
+		canvasScale = 1; // no difference lmao
 	} else {
 		canvasScale = 1;
 	}
@@ -123,12 +155,19 @@ function setup() {
 	
 	fxlist = ['lines','boxes','fractal'];
 	fxindex = 0;
-	fxtimer = 0;
+	fxtimer = 300;
 	fxfade = 0;
 	
+	mouseX_lag = 0;
+	mouseY_lag = 0;
+	
+	strokeCap(SQUARE);
 }
 
 function draw() {
+	
+	mouseX_lag += (mouseX-mouseX_lag)*.1;
+	mouseY_lag += (mouseY-mouseY_lag)*.1;
 	
 	clear();
 	//background(255);
@@ -154,7 +193,7 @@ function draw() {
 		fx[fxlist[fxindex]]();
 		
 		fxtimer++;
-		if(fxtimer>200) {
+		if(fxtimer>500) {
 			fxtimer = 0;
 			fxfade = 1;
 		}
