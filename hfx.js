@@ -166,6 +166,10 @@ function setup() {
 
 function draw() {
 	
+	if(window.scrollY>window.innerHeight) {
+		return;
+	}
+	
 	mouseX_lag += (mouseX-mouseX_lag)*.1;
 	mouseY_lag += (mouseY-mouseY_lag)*.1;
 	

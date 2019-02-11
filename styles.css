@@ -8,7 +8,6 @@
 	padding-bottom: 30px;
 	padding-right: 30px;
 	box-shadow: 0 0 3px 3px grey;
-	margin-bottom: 10px;
 }
 
 #header {
@@ -51,7 +50,8 @@
 
 body {
 	font-family: 'segoe ui light';
-	
+	margin: 0;
+	padding: 0;
 }
 
 canvas {
@@ -96,10 +96,21 @@ a:hover {
 }
 
 .imgcontain img {
+	/*
 	width: auto;
 	height: auto;
 	max-width: 100%;
 	max-height: 100%;
 	margin: auto;
 	display: block;
+	*/
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+	transform:translateY(-50%);
+	margin: auto;
+	top: 250px;
+	display: block;
+	position: relative;
 }
