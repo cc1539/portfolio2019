@@ -1,31 +1,31 @@
 {"data":[
 	{
 		"name":"Circadian Tetris",
-		"desc":"Tetris, but it flips around and inverts. The most challenging part of this project wasn't the actual gameplay, but rather the somewhat gaudy visual effects.",
+		"desc":"Tetris, but it flips around and inverts. I feel like most of the effort went into those weird graphical effects. This project is written in Processing.",
 		"link":"https://github.com/Metashian/-circadian-tetris",
 		"img":"circtetris.png"
 	},
 	{
 		"name":"Black Hole Visualizer",
-		"desc":"Simulates what a black hole of varying strength might look like. Use the mouse to look around, the WASD keys to move, and click and drag inside the window to control how strong the black hole is. At first, you will only see a sphere; this is not the black hole, which is actually at first between you and the sphere and starts at zero strength.",
+		"desc":"Simulates what a black hole of varying strength might look like. Use the mouse to look around, the WASD keys to move, and click and drag inside the window to control how strong the black hole is. At first, you will only see a sphere; this is not the black hole, which is actually at first between you and the sphere and starts at zero strength. This project is written in Processing.",
 		"link":"https://github.com/Metashian/-black-hole-light-warp",
 		"img":"bhlw.png"
 	},
 	{
 		"name":"Particles w/ Temperature",
-		"desc":"MPM fluid where particles can have a temperature. Particles with a temperature above zero will tend to repel other particles and those with a temperature below zero will try to stick to other particles. Left mouse button to heat and right mouse button to cool.",
+		"desc":"MPM fluid where particles can have a temperature. Particles with a temperature above zero will tend to repel other particles and those with a temperature below zero will try to stick to other particles. Left mouse button to heat and right mouse button to cool. This project is written in Processing.",
 		"link":"https://github.com/Metashian/-temperature-particles",
 		"img":"partswtemp.png"
 	},
 	{
 		"name":"2D Fluid & Gravity",
-		"desc":"MPM fluid coupled with barnes-hut for gravity. Press 'n' to spawn particles.",
+		"desc":"MPM fluid coupled with barnes-hut for gravity. Press 'n' to spawn particles. This project is written in Processing.",
 		"link":"https://github.com/Metashian/-gravity-fluid",
 		"img":"gravfluid.png"
 	},
 	{
 		"name":"Simple Euler Fluid",
-		"desc":"Euler fluid that, for once, runs on C++ instead of Java. The SFML library is used for the window-handling and graphics.",
+		"desc":"2D grid-based fluid simulation. Left click to add fire. This project is written in C++ and uses the SFML library.",
 		"link":"https://github.com/Metashian/-sfml-euler-fluid-test",
 		"img":"eulerfluid.png"
 	}
