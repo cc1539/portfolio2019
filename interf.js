@@ -28,25 +28,36 @@ window.onload = function() {
 		$.ajax({
 			url: "data.json",
 			success: function(response) {
+				
+				var data = JSON.parse(response).data;
+				console.log(data);
+				
+				var project_entry = "<p class='collapsible'>+ </p><div><hr><p><b>Description</b></p><p class='desc'></p><hr><div class='imgcontain'><img><div class='projectlink'><a target='_blank'><img src='assets/giticon/GitHub-Mark-120px-plus.png' class='gitlink'></a></div></div><hr></div>";
+				
+				
+				
 				/*
-					<p class="collapsible">+ Simple Euler Fluid</p>
-						<div>
-							<hr>
-							
-							<p><b>Description</b></p>
-							<p class="desc">2D euler (grid-based) fluid simulation. The SFML library is used for the window-handling and graphics.</p><hr>
-							
-							<div class="imgcontain">
-								<img src="assets/images/eulerfluid.png"></a>
-								<div class="gitlink">
-									<a href="https://github.com/Metashian/-sfml-euler-fluid-test" target="_blank"></a>
-								</div>
+				<p class="collapsible">+ Circadian Tetris</p>
+					<div>
+						<hr>
+						
+						<p><b>Description</b></p>
+						<p class="desc">Tetris, but it flips around and inverts. The most challenging part of this project wasn't the actual gameplay, but rather the somewhat gaudy visual effects.</p><hr>
+						
+						<div class="imgcontain">
+							<img src="assets/images/circtetris.png">
+							<div class="projectlink">
+								<a href="https://github.com/Metashian/-circadian-tetris" target="_blank">
+									<img src="assets/giticon/GitHub-Mark-120px-plus.png" class="gitlink">
+								</a>
 							</div>
-							
-							<hr>
-							
 						</div>
-					*/
+						
+						<hr>
+						
+					</div>
+				*/
+				
 			}
 		});
 	}
