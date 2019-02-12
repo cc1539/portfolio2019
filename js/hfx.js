@@ -37,7 +37,7 @@ class Box {
 	draw() {
 		//stroke(fadeShade+(255-fadeShade)*(this.z/100-1));
 		colorMode(RGB);
-		stroke(100,(1-this.z/100)*255*fadeShade);
+		stroke(64,(1-this.z/100)*255*fadeShade);
 		var verts = {};
 		for(var i=0;i<=1;i++) { verts[i]={}
 		for(var j=0;j<=1;j++) { verts[i][j]={}
@@ -86,8 +86,8 @@ function drawBranch(x,y,a,length,a0,a1,shrink,d0,d1,s) {
 	
 	strokeWeight(length*0.1);
 	//stroke(fadeShade+(255-fadeShade)*(1-s));
-	strokeHSB(((1-s)*64+frameCount)%255,255,55,fadeShade*255*(1-s));
-	//stroke(200,fadeShade*255*(1-s));
+	//strokeHSB(((1-s)*64+frameCount)%255,255,55,fadeShade*255*(1-s));
+	stroke(128,fadeShade*255*s);
 	line(x,y,x1,y1);
 	
 	length *= shrink;
@@ -116,9 +116,9 @@ var fx = {
 			
 			strokeWeight(w);
 			
-			strokeHSB(((sin(t/100.)*.5+.5)*32+frameCount)%255,55,255,fadeShade*255);
+			//strokeHSB(((sin(t/100.)*.5+.5)*32+frameCount)%255,55,255,fadeShade*255);
 			
-			//stroke(0,fadeShade*255);
+			stroke(128,fadeShade*255);
 			line(i,0,0,i);
 			/*
 			w -= 2;
