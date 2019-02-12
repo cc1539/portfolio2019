@@ -29,14 +29,11 @@ window.onload = function() {
 			url: "data.json",
 			success: function(response) {
 				
-				console.log(response);
-				
-				var data = JSON.parse(response).data;
-				console.log(data);
-				
 				var project_entry = "<p class='collapsible'>+ </p><div><hr><p><b>Description</b></p><p class='desc'></p><hr><div class='imgcontain'><img><div class='projectlink'><a target='_blank'><img src='assets/giticon/GitHub-Mark-120px-plus.png' class='gitlink'></a></div></div><hr></div>";
 				
-				
+				for(var i=0;i<response.data.length;i++) {
+					
+				}
 				
 				/*
 				<p class="collapsible">+ Circadian Tetris</p>
