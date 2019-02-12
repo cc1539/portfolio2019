@@ -93,17 +93,10 @@ a:hover {
 	margin-bottom: 20px;
 	background-color: #222222;
 	padding: 0;
+	position: relative;
 }
 
-.imgcontain img {
-	/*
-	width: auto;
-	height: auto;
-	max-width: 100%;
-	max-height: 100%;
-	margin: auto;
-	display: block;
-	*/
+.imgcontain>img {
 	width: auto;
 	height: auto;
 	max-width: 100%;
@@ -113,4 +106,53 @@ a:hover {
 	top: 250px;
 	display: block;
 	position: relative;
+}
+
+.projectlink {
+	opacity: 0;
+	transition: opacity .3s ease;
+	background-color: #999999;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.projectlink:hover {
+	transition: opacity .3s ease;
+	opacity: 0.8;
+	
+}
+
+.projectlink a {
+	font-size: 16;
+	text-align: center;
+	vertical-align: middle;
+	margin: auto;
+}
+
+.gitlink {
+	margin: auto;
+	display: block;
+	position: relative;
+	transform: translateY(-50%);
+	top: 250px;
+	width: 80px;
+	height: 80px;
+	transition: width 0.1s ease, height 0.2s ease;
+}
+
+.gitlink:hover {
+	width: 100px;
+	height: 100px;
+	transition: width 0.1s ease, height 0.2s ease;
+}
+
+.gitlink:active {
+	width: 90px;
+	height: 90px;
+	transition: width 0.1s ease, height 0.2s ease;
 }
