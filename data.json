@@ -30,6 +30,12 @@
 		"img":"eulerfluid.png"
 	},
 	{
+		"name":"RutgerColeg",
+		"desc":"A silly game I and a couple of friends put together for Fall 2018 HackRU event. Written in Processing.",
+		"link":"https://github.com/syall/RutgerColeg",
+		"img":"ruger.png"
+	},
+	{
 		"name":"This Portfolio",
 		"desc":"Basically an updatable resumé. This project is written with various web-based languages and utilizes jQuery and p5.js.",
 		"link":"https://github.com/cc1539/portfolio2019",
