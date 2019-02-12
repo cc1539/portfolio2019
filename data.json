@@ -28,5 +28,11 @@
 		"desc":"2D grid-based fluid simulation. Left click to add fire. This project is written in C++ and uses the SFML library.",
 		"link":"https://github.com/Metashian/-sfml-euler-fluid-test",
 		"img":"eulerfluid.png"
+	},
+	{
+		"name":"This Portfolio",
+		"desc":"Basically an updatable resumé. This project is written with various web-based languages and utilizes jQuery and p5.js.",
+		"link":"https://github.com/cc1539/portfolio2019",
+		"img":"portfolio.png"
 	}
 ]}
