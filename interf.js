@@ -25,20 +25,19 @@ window.onload = function() {
 				
 				for(var i=0;i<response.data.length;i++) {
 					var project_entry = $.parseHTML(project_entry_format);
-					$(project_entry[1]).append(response.data[i].name);
-					$(project_entry[2])
+					$(project_entry[0]).append(response.data[i].name);
+					$(project_entry[1])
 						.children('p')[1]
 						.append(response.data[i].desc);
-					$($($(project_entry[2])
+					$($($(project_entry[1])
 						.children('div')[0])
 						.children('img')[0])
 						.prop('src','assets/images/'+response.data[i].img);
-					$($($($(project_entry[2])
+					$($($($(project_entry[1])
 						.children('div')[0])
 						.children('div')[0])
 						.children('a')[0])
 						.prop('href',response.data[i].link);
-					
 					$("#projdiv").append(project_entry);
 				}
 				
