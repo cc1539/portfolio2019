@@ -29,6 +29,8 @@ window.onload = function() {
 			url: "data.json",
 			success: function(response) {
 				
+				console.log(response);
+				
 				var data = JSON.parse(response).data;
 				console.log(data);
 				
