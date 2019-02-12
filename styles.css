@@ -75,11 +75,11 @@ a:hover {
 .collapsible {
 	user-select: none;
 }
-
+/*
 .collapsible+* {
 	display: none;
 }
-
+*/
 #footer img {
 	width: 32px;
 	height: 32px;
