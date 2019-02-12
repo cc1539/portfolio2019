@@ -87,7 +87,7 @@ function drawBranch(x,y,a,length,a0,a1,shrink,d0,d1,s) {
 	strokeWeight(length*0.1);
 	//stroke(fadeShade+(255-fadeShade)*(1-s));
 	//strokeHSB(((1-s)*64+frameCount)%255,255,55,fadeShade*255*(1-s));
-	stroke(128,fadeShade*255*s);
+	stroke(128,fadeShade*255*(1-s));
 	line(x,y,x1,y1);
 	
 	length *= shrink;
@@ -118,7 +118,7 @@ var fx = {
 			
 			//strokeHSB(((sin(t/100.)*.5+.5)*32+frameCount)%255,55,255,fadeShade*255);
 			
-			stroke(128,fadeShade*255);
+			stroke(220,fadeShade*255);
 			line(i,0,0,i);
 			/*
 			w -= 2;
