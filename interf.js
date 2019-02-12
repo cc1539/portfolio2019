@@ -42,6 +42,11 @@ window.onload = function() {
 					$("#projdiv").append(project_entry);
 				}
 				
+				forClass("collapsible",function(elem){
+					elem.nextElementSibling.style.display = "block";
+					//elem.onclick = new Function('toggleCollapsible(this)');
+				});
+				
 			}
 		});
 	}
@@ -80,10 +85,7 @@ window.onload = function() {
 		var html = elem.innerHTML;
 		elem.innerHTML = html.substring(0,3)+'<span style="font-size:14px;">'+html.substring(3)+"</span>";
 	});
-	forClass("collapsible",function(elem){
-		elem.nextElementSibling.style.display = "block";
-		//elem.onclick = new Function('toggleCollapsible(this)');
-	});
+	
 	
 	/*
 	setTimeout(function(){
