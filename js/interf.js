@@ -18,7 +18,7 @@ window.onload = function() {
 	if(projdiv) {
 		// then use ajax to load data
 		$.ajax({
-			url: "../data.json",
+			url: "data.json",
 			success: function(response) {
 				
 				var project_entry_format = "<p class='collapsible' style='font-size:24px;'>+ </p><div><hr><p><b>Description</b></p><p class='desc'></p><hr><div class='imgcontain'><img><div class='projectlink'><a target='_blank'><img src='assets/giticon/GitHub-Mark-120px-plus.png' class='gitlink'></a></div></div><hr></div>";
