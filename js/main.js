@@ -57,3 +57,17 @@ function buildContent(data) {
 }
 
 $(function(){$.ajax({url:"content/data.json",success:buildContent});});
+
+$(window).on('resize',function(){
+	let win = $(this);
+	if(win.width()<590) {
+		$("#header").css("height","120px").css("padding-top","0px");
+	} else {
+		$("#header").attr("style","");
+	}
+	if(win.width()<750) {
+		$("#title").text("Christopher's Portfolio");
+	} else {
+		$("#title").text("Christopher Cheng's Online Portfolio");
+	}
+});
