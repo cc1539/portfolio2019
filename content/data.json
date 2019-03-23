@@ -1,0 +1,176 @@
+{
+	"about": {
+		"link_name": "About Me",
+		"content": "Hey there! I'm Christopher Cheng, a 3rd year university student studying Electrical and Computer Engineering. My interests mainly lie in the field of computational physics and parallel processing, but I'm open to other subjects such as machine learning, cloud computing, and blockchain. Below, you can view a list of skills relevant to the positions I'm interested in, and below that, projects that demonstrate the depth of those skills. On the very bottom, you can find links to my Github, LinkedIn, etc. Just a warning about my facebook page -- I haven't changed my profile picture since 2003, which should tell you enough about how much I use it."
+	},
+	"skills": {
+		"link_name": "Experience & Skills",
+		"content": [
+			{
+				"title": "Java",
+				"content": "I have used Eclipse, IntelliJ Idea, and the Processing IDE to develop various applications in my spare time. I have experience using the Beads, Minim, Box2D, and Web3j libraries. I also think it's worth mentioning that the Processing IDE has an Android mode, which allows me to quickly write and export Android apps."
+			},
+			{
+				"title": "C & C++",
+				"content": "I've used gcc, g++, and Visual Studio to build projects that use the OpenGL, GLFW, SDL, and SDL2 libraries/library suites. I usually only use C or C++ when my project isn't too advanced and I'm looking for speed that Java just can't provide."
+			},
+			{
+				"title": "C#",
+				"content": "I've only ever used this language to write scripts for the Unity game engine."
+			},
+			{
+				"title": "JavaScript",
+				"content": "Used it in the creation of websites such as this portfolio and my software engineering team's demo website. I've worked with p5.js, jQuery, and web3."
+			},
+			{
+				"title": "HTML, CSS, PHP, & SQL",
+				"content": "Same as JavaScript minus the last sentence."
+			},
+			{
+				"title": "Lua",
+				"content": "I've mainly used it for -- don't laugh -- writing scripts for Roblox games."
+			},
+			{
+				"title": "GLSL",
+				"content": "Used it to perform parallel computations."
+			},
+			{
+				"title": "Python",
+				"content": "This might come as a surprise, but I'm not really all that experienced in Python. I can write sorta-advanced scripts, but haven't in quite a while."
+			}
+		]
+	},
+	"projects": {
+		"link_name": "Projects",
+		"content": [
+			{
+				"title": "Circadian Tetris",
+				"desc": "A \"spin\" on tetris where the blocks and spaces periodically invert. Use the arrow keys to manipulate the tetris piece.",
+				"link": "https://github.com/cc1539/pf19-circadian-tetris",
+				"img": "circtetris.png"
+			},
+			{
+				"title": "Black Hole Visualizer (version 1)",
+				"desc": "Demonstrates how a black hole might look like with it bending light around it. I used a fixed-distance ray-marching technique for this, which turned out to be quite slow compared to a variable-distance method that I used in a second version that can be found below. Use the WASD keys to move and the mouse to look around.",
+				"link": "https://github.com/cc1539/pf19-bhv-v1",
+				"img": "bhlw.png"
+			},
+			{
+				"title": "Particles w/ Temperature",
+				"desc": "Particles with a temperature value that determines whether it's sticky or repulsive and by how much. The left and right mouse-buttons adjust the temperature of particles near the mouse pointer.",
+				"link": "https://github.com/cc1539/pf19-temperature-particles",
+				"img": "partswtemp.png"
+			},
+			{
+				"title": "2D Fluid w/ Gravity",
+				"desc": "An MPM fluid mixed with some verlet collision to prevent overlapping and N-body gravity with Barnes-Hut spatial decomposition. Use 'n' to create particles.",
+				"link": "https://github.com/cc1539/pf19-mpm-fluid-gravity",
+				"img": "gravfluid.png"
+			},
+			{
+				"title": "Simple Euler Fluid",
+				"desc": "A simple grid-based fluid simulation. Left-click to create fire.",
+				"link": "https://github.com/cc1539/pf19-sfml-euler-fluid",
+				"img": "eulerfluid.png"
+			},
+			{
+				"title": "Black Hole Visualizer (version 2)",
+				"desc": "Does the same thing as version 1 but much faster by taking advantage of the nature of sphere-tracing.",
+				"link": "https://github.com/cc1539/pf19-bhv-v2",
+				"img": "blackhole2.png"
+			},
+			{
+				"title": "Ethereum Project",
+				"desc": "A project that I won't divulge the details of for now.",
+				"link": "N/A",
+				"img": ""
+			},
+			{
+				"title": "Pseudo-SPH Fluid",
+				"desc": "A fluid simulation that takes inspiration from the principles of SPH but doesn't really use the \"real\" SPH formulas.",
+				"link": "https://github.com/cc1539/pf19-pseudo-sph-fluid",
+				"img": "pseudosph.png"
+			},
+			{
+				"title": "XOR CryptoSystem",
+				"desc": "XOR encrypts files and directories with a hash value generated from a given password. I made this before I knew SHA was a thing, so the hash algorithm is my own and is thus probably not cryptographically secure, not to mention that XOR encryption is fairly easily broken if you know even a little about the original contents. For this reason, don't actually use it to encrypt sensitive files.",
+				"link": "https://github.com/cc1539/pf19-xor-cryptosystem",
+				"img": "xorcrypto.png"
+			},
+			{
+				"title": "Basic Server",
+				"desc": "A test server written in Java. It is not capable of running any server-side scripts, so in a way it's not unlike how Github Pages works.",
+				"link": "https://github.com/cc1539/pf19-basic-server",
+				"img": "javaserver.png"
+			},
+			{
+				"title": "Mandelbox Explorer",
+				"desc": "Uses sphere-tracing to render the mandelbox, one of the mandelbrot's many 3D analogues. Use the WASD keys to move and the mouse to look around.",
+				"link": "https://github.com/cc1539/pf19-mandelbox",
+				"img": "mandelbox.png"
+			},
+			{
+				"title": "Simple Euler Fluid 2",
+				"desc": "This guy really likes fluids, doesn't he? Yet another grid-based fluid, which runs slower than the one shown above (since it's written in Java and not C++) but has more \"features\". Left-click and drag to create fluid flow and right-click to add dye with anomalous properties. Use number keys 0-3 to pick the anomalous property.",
+				"link": "https://github.com/cc1539/pf19-java-euler-fluid",
+				"img": "eulerfluid2.png"
+			},
+			{
+				"title": "Android Test",
+				"desc": "A simple test to see if Processing's Android mode actually works. Tap the screen to create letters.",
+				"link": "https://github.com/cc1539/pf19-android-test",
+				"img": "androidtest.png"
+			},
+			{
+				"title": "Schrodinger 2D",
+				"desc": "Uses the schrodinger equation to calculate the evolution of a particle through time. Press 'n' to create particle superpositions and 'c' to clear the grid.",
+				"link": "https://github.com/cc1539/pf19-schrodinger-2d",
+				"img": "schrodinger.png"
+			},
+			{
+				"title": "Reaction Diffusion",
+				"desc": "A simple reaction-diffusion simulation. Right-click to fill the screen with coral pattern.",
+				"link": "https://github.com/cc1539/pf19-reaction-diffusion",
+				"img": "reactdiffuse.png"
+			},
+			{
+				"title": "Conway's Game of Life",
+				"desc": "An implementation of Conway's famous game of life, which demonstrated and popularized the concept of emergence, in which simple rules can create complex systems.",
+				"link": "https://github.com/cc1539/pf19-gol",
+				"img": "gol.png"
+			},
+			{
+				"title": "CSI Enhance Effect",
+				"desc": "A joke program that allows you to zoom in on a spot on an image by pressing space, only to \"enhance\" and reveal that Jason Bourne had his scope on you.",
+				"link": "https://github.com/cc1539/pf19-fake-enhance",
+				"img": "enhance.png"
+			},
+			{
+				"title": "RutgerColeg",
+				"desc": "A silly game that my friends and I made at the Fall 2018 HackRu event. A demonstration of this game can be found <a href='https://www.youtube.com/watch?v=sHJpmG9_UlI'>here</a>.",
+				"link": "https://github.com/syall/RutgerColeg",
+				"img": "ruger.png"
+			}
+		]
+	},
+	"social": {
+		"link_name": "Links & Social Media",
+		"content": [
+			{
+				"img": "git-link.png",
+				"link": "https://github.com/cc1539",
+				"tip": "Github"
+			},
+			{
+				"img": "linkedin-link.png",
+				"link": "https://www.linkedin.com/in/christopher-cheng-75b900152/",
+				"tip": "LinkedIn"
+			},
+			{
+				"img": "facebook-link.png",
+				"link": "https://www.facebook.com/chris.cheng.9822",
+				"tip": "Facebook"
+			}
+		]
+	}
+}
