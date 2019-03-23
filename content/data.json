@@ -140,12 +140,6 @@
 				"img": "gol.png"
 			},
 			{
-				"title": "CSI Enhance Effect",
-				"desc": "A joke program that allows you to zoom in on a spot on an image by pressing space, only to \"enhance\" and reveal that Jason Bourne had his scope on you.",
-				"link": "https://github.com/cc1539/pf19-fake-enhance",
-				"img": "enhance.png"
-			},
-			{
 				"title": "RutgerColeg",
 				"desc": "A silly game that my friends and I made at the Fall 2018 HackRu event. A demonstration of this game can be found <a href='https://www.youtube.com/watch?v=sHJpmG9_UlI'>here</a>.",
 				"link": "https://github.com/syall/RutgerColeg",
