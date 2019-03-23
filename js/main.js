@@ -36,7 +36,7 @@ function buildContent(data) {
 								container.append("<div><img src='assets/images/git-link.png'></div>");
 								part.append(container);
 								container.click(function(){
-									location.href = entry[prop];
+									window.open(entry[prop],"_blank");
 								});
 							}
 						} else if(key=="social") {
