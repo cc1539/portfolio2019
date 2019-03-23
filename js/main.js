@@ -58,7 +58,7 @@ function buildContent(data) {
 
 $(function(){$.ajax({url:"content/data.json",success:buildContent});});
 
-$(window).on('resize',function(){
+function adjustSize() {
 	let win = $(this);
 	if(win.width()<590) {
 		$("#header").css("height","120px").css("padding-top","0px");
@@ -70,4 +70,7 @@ $(window).on('resize',function(){
 	} else {
 		$("#title").text("Christopher Cheng's Online Portfolio");
 	}
-});
+}
+
+adjustSize();
+$(window).on('resize',adjustSize);
