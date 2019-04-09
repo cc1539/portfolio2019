@@ -81,7 +81,7 @@
 			},
 			{
 				"title": "Ethereum Test Project",
-				"desc": "For now, all it does is allow two accounts to send text messages to each other. This app is poorly organized code-wise and currently very buggy and highly unsecure, so please don't actually use it for real-life application just yet. Works only on devices with a running ethereum node.",
+				"desc": "For now, all it does is allow people to send text messages to each other through their ethereum accounts. This app isn't that well organized code-wise and is currently very buggy and highly unsecure, so please don't actually use it for real-life application just yet. Works only on devices running an ethereum node. I used web3j to perform transactions and ganache-cli to simulate a node.",
 				"link": "https://github.com/cc1539/pf19-ethertest",
 				"img": "ethertest.png"
 			},
