@@ -80,10 +80,10 @@
 				"img": "blackhole2.png"
 			},
 			{
-				"title": "Ethereum Project",
-				"desc": "A project that I won't divulge the details of for now.",
-				"link": "N/A",
-				"img": ""
+				"title": "Ethereum Test Project",
+				"desc": "For now, all it does is allow two accounts to text messages to each other. This app is poorly organized code-wise and currently very buggy and highly unsecure, so don't actually use it for real-life communication, unless you're into having everyone being able to see your messages. Works only on devices with a running ethereum node.",
+				"link": "https://github.com/cc1539/pf19-ethertest",
+				"img": "ethertest.png"
 			},
 			{
 				"title": "Pseudo-SPH Fluid",
